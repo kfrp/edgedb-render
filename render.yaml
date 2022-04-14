@@ -7,7 +7,6 @@ services:
       value: 1234ABC!
     - key: EDGEDB_SERVER_SECURITY
       value: insecure_dev_mode
-    value: true
     disk:
       name: edgedb-data
       mountPath: /usr/local/bin/
