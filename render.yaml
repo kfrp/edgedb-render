@@ -1,1 +1,15 @@
-
+services:
+ - type: pserv
+    name: edgedb
+    env: docker
+    envVars:
+    - key: EDGEDB_SERVER_PASSWORD
+      generateValue: true
+    - key: EDGEDB_SERVER_TLS_CERT_MODE
+      value: generate_self_signed
+    - key: PORT
+      value: 5656
+    disk:
+      name: edgedb-data
+      mountPath: /var/lib/edgedb/data
+      sizeGB: 10
