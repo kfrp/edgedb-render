@@ -1,3 +1,3 @@
-FROM edgedb:edgedb
+FROM edgedb/edgedb
 
 CMD ["edgedb-server"]
