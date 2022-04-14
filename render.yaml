@@ -7,5 +7,5 @@ services:
       value: 5656
     disk:
       name: edgedb-data
-      mountPath: /var/lib/edgedb/data
+      mountPath: /usr/local/bin/
       sizeGB: 10
