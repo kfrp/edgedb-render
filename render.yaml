@@ -3,10 +3,6 @@ services:
     name: edgedb
     env: docker
     envVars:
-    - key: EDGEDB_SERVER_PASSWORD
-      sync: false
-    - key: EDGEDB_SERVER_TLS_CERT_MODE
-      sync: false
     - key: PORT
       value: 5656
     disk:
