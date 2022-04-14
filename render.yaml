@@ -2,9 +2,6 @@ services:
  - type: pserv
     name: edgedb
     env: docker
-    envVars:
-    - key: PORT
-      value: 5656
     disk:
       name: edgedb-data
       mountPath: /usr/local/bin/
