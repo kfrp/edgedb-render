@@ -2,11 +2,6 @@ services:
  - type: pserv
     name: edgedb
     env: docker
-    envVars:
-    - key: EDGEDB_SERVER_PASSWORD
-      value: 1234ABC!
-    - key: EDGEDB_SERVER_SECURITY
-      value: insecure_dev_mode
     disk:
       name: edgedb-data
       mountPath: /usr/local/bin/
