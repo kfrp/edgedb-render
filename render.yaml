@@ -4,9 +4,9 @@ services:
     env: docker
     envVars:
     - key: EDGEDB_SERVER_PASSWORD
-      generateValue: true
+      sync: false
     - key: EDGEDB_SERVER_TLS_CERT_MODE
-      value: generate_self_signed
+      sync: false
     - key: PORT
       value: 5656
     disk:
